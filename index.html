@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Historia</title>
+	<link rel="stylesheet" href="styles.css">
+	
+		
+	
+	
+	
+</head>
+
+<body onload="startTime()">
+<video id="video-background" playsinline autoplay muted loop>
+    <source src="vid2.mp4" type="video/mp4">
+    Twoja przeglądarka nie obsługuje odtwarzacza wideo.
+  </video>
+	<header>
+		<h1>Bieganie</h1>
+	</header>
+
+	<nav>	
+	
+
+	</nav>
+	
+	<main>
+	<div id="txt"></div>
+		<section id="bombas">
+				
+					
+			<div class="recipe">
+				<h3>Biegi Krótkodystansowe</h3>
+				<div class="content">
+				 <input type="checkbox" class="read-more-state" id="post-1" />
+
+  <p class="read-more-wrap"><span class="read-more-target">Czym są biegi krótkodystansowe?
+Biegi krótkodystansowe, znane również jako sprinty, to dyscypliny lekkoatletyczne obejmujące biegi na dystansach od 60 do 400 metrów. Najpopularniejsze dystanse to 100, 200 i 400 metrów. Sprinty są testem szybkości, wybuchowej siły i techniki biegu.</span></p>
+  
+  <label for="post-1" class="read-more-trigger"></label>
+					
+					
+				</div>
+				</div>
+			<div class="ricm">
+				<h3>Biegi Długodystansowe</h3>
+				<div class="content">
+				<input type="checkbox" class="read-more-state" id="post-2" />
+
+  <p class="read-more-wrap"><span class="read-more-target">Biegi długodystansowe to wyjątkowa kategoria biegów lekkoatletycznych, które wymagają nie tylko doskonałej kondycji fizycznej, ale również wyjątkowej wytrzymałości psychicznej. Dystanse te obejmują biegi na 5000 metrów, 10 000 metrów, półmaraton (21,0975 km) oraz maraton (42,195 km). Każdy z tych biegów stawia przed zawodnikami różnorodne wyzwania, które różnią się od tych w sprintach czy biegach średniodystansowych.</span></p>
+  
+  <label for="post-2" class="read-more-trigger"></label>
+			
+			</div>
+			</div>
+			<div class="driv">
+				<h3>Rekord Swiata</h3>
+				<div class="content">
+				<input type="checkbox" class="read-more-state" id="post-3" />
+
+  <p class="read-more-wrap"><span class="read-more-target">Rekord świata w biegu na 100 metrów mężczyzn wynosi 9,58 sekundy i został ustanowiony przez Usaina Bolta 16 sierpnia 2009 roku podczas Mistrzostw Świata w Berlinie. Bolt osiągnął średnią prędkość około 37,58 km/h, a maksymalna prędkość, jaką osiągnął, to 44,72 km/h.
+
+.  </span></p>
+  
+  <label for="post-3" class="read-more-trigger"></label>
+			
+			</div>
+			</div>
+
+
+
+
+			
+		</section>
+	</main>
+	
+	
+	
+	
+	<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i}; 
+  return i;
+}
+</script>
+
+
+</body>
